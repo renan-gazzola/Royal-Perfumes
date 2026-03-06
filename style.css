@@ -8,6 +8,18 @@ font-family:Arial, Helvetica, sans-serif;
 --gold:#d4af37;
 }
 
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
 body{
 background:#111;
 color:#fff;
