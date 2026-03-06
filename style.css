@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:25px;
+background:#000;
+border-bottom:2px solid gold;
+}
+
+header h1{
+color:gold;
+font-size:28px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(black,#1c1c1c);
+}
+
+.hero h2{
+font-size:36px;
+margin-bottom:15px;
+color:gold;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.botao{
+background:gold;
+color:black;
+padding:14px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:0.3s;
+}
+
+.botao:hover{
+color: #d4af37;
+background:#1c1c1c;
+border: #d4af37 solid 5px;
+}
+
+/* PRODUTOS */
+
+.produtos{
+padding:60px 20px;
+text-align:center;
+}
+
+.produtos h2{
+margin-bottom:40px;
+color:gold;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+border: #d4af37 solid 5px;
+}
+
+.card img{
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+}
+
+.card h3{
+color:gold;
+margin-bottom:5px;
+}
+
+.card a{
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+color:black;
+background:gold;
+padding:8px 18px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* COMO FUNCIONA */
+
+.como-funciona{
+background:#1c1c1c;
+padding:60px 20px;
+text-align:center;
+}
+
+.passos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.passos div{
+max-width:180px;
+}
+
+.passos h3{
+color:gold;
+font-size:30px;
+margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+padding:70px 20px;
+}
+
+.cta h2{
+margin-bottom:25px;
+color:gold;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+border-top:1px solid gold;
+font-size:14px;
+}
