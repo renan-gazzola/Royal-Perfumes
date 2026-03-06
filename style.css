@@ -4,6 +4,9 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
+:root{
+--gold:#d4af37;
+}
 
 body{
 background:#111;
@@ -16,11 +19,11 @@ header{
 text-align:center;
 padding:25px;
 background:#000;
-border-bottom:2px solid gold;
+border-bottom:2px solid var(--gold);;
 }
 
 header h1{
-color:gold;
+color:var(--gold);
 font-size:28px;
 }
 
@@ -35,7 +38,7 @@ background:linear-gradient(black,#1c1c1c);
 .hero h2{
 font-size:36px;
 margin-bottom:15px;
-color:gold;
+color:var(--gold);
 }
 
 .hero p{
@@ -45,7 +48,7 @@ margin-bottom:30px;
 }
 
 .botao{
-background:gold;
+background-color:var(--gold);
 color:black;
 padding:14px 30px;
 text-decoration:none;
@@ -55,21 +58,50 @@ transition:0.3s;
 }
 
 .botao:hover{
-color: #d4af37;
+color:var(--gold);
 background:#1c1c1c;
 border: #d4af37 solid 5px;
 }
 
-/* PRODUTOS */
 
-.produtos{
+.marcas .cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width: 90%;
+padding: 20px;
+margin:auto
+
+}
+
+.marcas .card{
+background:#0f0f0f00;
+margin: auto;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.marcas h2{
+margin-bottom:40px;
+color:var(--gold);
+}
+
+.section{
 padding:60px 20px;
 text-align:center;
 }
 
+
+
+
+/* PRODUTOS */
+
+
 .produtos h2{
 margin-bottom:40px;
-color:gold;
+color:var(--gold);
 }
 
 .cards{
@@ -82,6 +114,7 @@ margin:auto;
 
 .card{
 background:#1a1a1a;
+margin: auto;
 padding:20px;
 border-radius:10px;
 transition:0.3s;
@@ -89,17 +122,19 @@ transition:0.3s;
 
 .card:hover{
 transform:scale(1.05);
-border: #d4af37 solid 5px;
+box-shadow:0 0 15px var(--gold);;
 }
 
 .card img{
-width:100%;
+
+height:220px;
+object-fit:cover;
 border-radius:6px;
 margin-bottom:10px;
 }
 
 .card h3{
-color:gold;
+color:var(--gold);
 margin-bottom:5px;
 }
 
@@ -108,7 +143,7 @@ display:inline-block;
 margin-top:10px;
 text-decoration:none;
 color:black;
-background:gold;
+background-color:var(--gold);;
 padding:8px 18px;
 border-radius:20px;
 font-size:14px;
@@ -135,7 +170,7 @@ max-width:180px;
 }
 
 .passos h3{
-color:gold;
+color:var(--gold);
 font-size:30px;
 margin-bottom:10px;
 }
@@ -149,7 +184,7 @@ padding:70px 20px;
 
 .cta h2{
 margin-bottom:25px;
-color:gold;
+color:var(--gold);
 }
 
 /* FOOTER */
@@ -158,6 +193,6 @@ footer{
 text-align:center;
 padding:30px;
 background:black;
-border-top:1px solid gold;
+border-top:1px solid var(--gold);;
 font-size:14px;
 }
